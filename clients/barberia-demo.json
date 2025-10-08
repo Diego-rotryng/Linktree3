@@ -1,0 +1,46 @@
+{
+  "brand": {
+    "avatar": "/img/barber-avatar.jpg",
+    "name": "Barbería Barrio X",
+    "tagline": "Cortes premium en 20 minutos",
+    "tags": [
+      "CABA",
+      "Turnos online",
+      "Barba+Toalla"
+    ]
+  },
+  "theme": {
+    "primary": "#A3E635",
+    "bg": "#0B0B0C",
+    "card": "#141416"
+  },
+  "cta": {
+    "wa": "5491112345678",
+    "wa_text": "Hola! ¿Me das turno?",
+    "calendar": "https://calendly.com/tu-usuario",
+    "pay": "https://mpago.la/xxxx"
+  },
+  "social": {
+    "instagram": "https://instagram.com/barberx",
+    "facebook": "https://facebook.com/barberx",
+    "tiktok": "https://tiktok.com/@barberx"
+  },
+  "promotions": [
+    {
+      "title": "Pack Premium",
+      "desc": "Corte + Barba + Toalla",
+      "price": "ARS 9.900",
+      "link": "https://wa.me/5491112345678?text=Pack%20Premium"
+    }
+  ],
+  "testimonials": [
+    {
+      "text": "Me dejaron impecable en 20’",
+      "author": "Juan P."
+    }
+  ],
+  "footer": {
+    "address": "Av. Siempreviva 742, CABA",
+    "maps": "https://maps.google.com/?q=Av.%20Siempreviva%20742%20CABA"
+  }
+}

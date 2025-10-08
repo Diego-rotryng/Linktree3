@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Página Express Pro — Link Argento</title>
+<meta name="description" content="Tu mini-sitio que vende: WhatsApp directo, reservas y pagos. Hecho en Argentina, sin complicaciones."/>
+<style>
+:root{--bg:#0b1220;--card:#0f1b36;--ink:#e8f0ff;--muted:#a6b6d5;--brand:#22c55e}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(1200px 900px at 15% -15%,#1a2a5d 0,#0b1220 60%);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+.container{max-width:1100px;margin:0 auto;padding:28px 24px}
+h1,h2,h3{margin:0}
+.lead{color:#cfe2ff;margin:10px 0 14px 0}
+.chip{background:#0e1b37;border:1px solid #263b78;color:#cfe2ff;border-radius:999px;padding:.45rem .8rem;font-weight:700}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.cta{display:inline-flex;gap:.7rem;align-items:center;background:var(--brand);color:#062b14;border:1px solid #16a34a;border-radius:12px;padding:.9rem 1.2rem;font-weight:900}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(6px);border-radius:14px}
+.grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:center}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.box{padding:16px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08)}
+.center{text-align:center}
+.muted{color:#a6b6d5}
+.btn{display:inline-flex;align-items:center;gap:.6rem;border-radius:12px;padding:.8rem 1rem;font-weight:800;cursor:pointer;border:1px solid #1c2b52}
+.primary{background:var(--brand);color:#08240f;border-color:#1aa24d}
+.ghost{background:#0d1830;color:#d8e4ff}
+.section{margin-top:24px}
+iframe{width:100%;height:80vh;border:0;border-radius:14px;background:#0b0b0c}
+label{display:block;margin:.4rem 0 .25rem 0;color:#dbe6ff;font-weight:600}
+input{width:100%;padding:.65rem .75rem;border-radius:10px;background:#0e1a33;color:#f2f6ff;border:1px solid rgba(255,255,255,.12)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.preset{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 10px 0}
+.preset .btn{font-size:.85rem;padding:.55rem .85rem}
+</style>
+</head>
+<body>
+<header class="container">
+  <div class="grid2">
+    <div>
+      <h1 style="font-size:40px;font-weight:900">Página Express Pro</h1>
+      <p class="lead">Tu mini-sitio que <strong>vende</strong>: WhatsApp directo, reservas y pagos. Hecho en Argentina, sin complicaciones.</p>
+      <div class="chips">
+        <span class="chip">WhatsApp-first</span><span class="chip">Carga &lt; 120 KB</span><span class="chip">Plantilla Dark Premium</span><span class="chip">Config. por Formulario</span>
+      </div>
+      <div style="margin-top:14px"><a href="#form" class="cta">Crear mi página</a></div>
+    </div>
+    <div class="card" style="padding:12px"><iframe src="../app/index.html"></iframe></div>
+  </div>
+</header>
+
+<section class="container section">
+  <h2>¿Cómo funciona?</h2>
+  <div class="grid3 section">
+    <div class="box"><h3>1) Completás el formulario</h3><p class="muted">Sin tecnicismos: nombre, WhatsApp, redes y (si querés) promos/testimonios.</p></div>
+    <div class="box"><h3>2) Previsualizás en vivo</h3><p class="muted">Ves tu página final en el acto. Si cambiás algo, se actualiza al instante.</p></div>
+    <div class="box"><h3>3) Pagás y la activamos</h3><p class="muted">Te llega el mail para abonar. Confirmás y te mandamos el link listo para usar.</p></div>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Ejemplos reales</h2>
+  <div class="grid3 section">
+    <div class="box center"><strong>Barbería Barrio X</strong><p class="muted">Cortes premium en 20’ — IG + WhatsApp + Pagos</p></div>
+    <div class="box center"><strong>Matías Pérez (Psicólogo)</strong><p class="muted">Sesiones online — Calendario + YouTube + Spotify</p></div>
+    <div class="box center"><strong>Café Caranday</strong><p class="muted">Promos del día — Maps + Instagram + Pedidos</p></div>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Planes y precios</h2>
+  <div class="grid3 section">
+    <div class="box center"><h3>Básico</h3><p class="muted">Ideal para empezar</p><p><strong>ARS 0 setup</strong> + hosting propio</p></div>
+    <div class="box center" style="border:2px solid #22c55e"><h3>Pro</h3><p class="muted">Lo más elegido</p><p><strong>ARS 7.000/mes</strong></p><p class="muted">WhatsApp, reservas, pagos, soporte</p></div>
+    <div class="box center"><h3>Teams</h3><p class="muted">Para equipos y multi-sede</p><p><strong>A convenir</strong></p></div>
+  </div>
+</section>
+
+<main id="form" class="container section grid2">
+  <section class="card" style="padding:16px">
+    <h2>Completá tus datos</h2>
+    <p class="muted">Rellená y previsualizá tu página. <strong>No mostramos JSON</strong>. Nos llega un correo con tu pedido para activarla.</p>
+    <div class="preset"><span class="muted">Presets:</span><button type="button" class="btn ghost" onclick="loadPreset('barber')">Barbería</button><button type="button" class="btn ghost" onclick="loadPreset('psy')">Psicólogo</button></div>
+    <form id="f" onsubmit="return submitOrder(event)">
+      <h3>Marca</h3>
+      <div class="row"><div><label>Logo / Foto (URL)</label><input name="avatar" placeholder="/img/avatar.jpg"></div><div><label>Nombre</label><input name="name" placeholder="Barbería Barrio X" required></div></div>
+      <div class="row"><div><label>Descripción corta</label><input name="desc" placeholder="Cortes premium en 20 minutos"></div><div><label>Destacados (coma, opcional)</label><input name="chips" placeholder="CABA, Turnos online, Barba+Toalla"></div></div>
+      <h3>Contacto y acciones</h3>
+      <div class="row"><div><label>WhatsApp (celular Argentina)</label><input name="wa" placeholder="11 1234 5678" required></div><div><label>Mensaje de WhatsApp</label><input name="wa_text" value="Hola! Quiero coordinar un turno"></div></div>
+      <div class="row"><div><label>Calendario (URL) <small>(opcional)</small></label><input name="calendar" placeholder="https://calendly.com/usuario"></div><div><label>Pago online (URL) <small>(opcional)</small></label><input name="pay" placeholder="https://mpago.la/..."></div></div>
+      <h3>Redes sociales</h3>
+      <div class="row3"><div><label>Instagram</label><input name="instagram" placeholder="https://instagram.com/..."></div><div><label>Facebook</label><input name="facebook" placeholder="https://facebook.com/..."></div><div><label>TikTok</label><input name="tiktok" placeholder="https://tiktok.com/@..."></div></div>
+      <div class="row3"><div><label>LinkedIn</label><input name="linkedin" placeholder="https://linkedin.com/in/..."></div><div><label>YouTube</label><input name="youtube" placeholder="https://youtube.com/@..."></div><div><label>Spotify</label><input name="spotify" placeholder="https://open.spotify.com/..."></div></div>
+      <h3>Promociones (opcional)</h3>
+      <div id="promos"></div><button type="button" class="btn ghost" onclick="addPromo()">+ Agregar promo</button>
+      <h3>Testimonios (opcional)</h3>
+      <div id="testis"></div><button type="button" class="btn ghost" onclick="addTesti()">+ Agregar testimonio</button>
+      <h3>Ubicación</h3>
+      <div class="row"><div><label>Dirección</label><input name="address" placeholder="Calle Falsa 123, CABA"></div><div><label>Google Maps (link)</label><input name="maps" placeholder="https://maps.google.com/?q=..."></div></div>
+      <h3>Datos de contacto</h3>
+      <div class="row"><div><label>Tu email</label><input name="email" type="email" placeholder="tu@email.com" required></div><div><label>Nombre del comercio/profesional</label><input name="business" placeholder="Barbería Barrio X" required></div></div>
+      <div class="row" style="margin-top:10px"><button type="button" class="btn primary" onclick="preview()">🔍 Previsualizar</button><button type="submit" class="btn ghost">💳 Enviar pedido y abonar</button></div>
+      <p class="muted">Al enviar el pedido, te indicamos cómo abonar. Tras el pago, activamos tu página y te enviamos el enlace final.</p>
+    </form>
+  </section>
+  <section class="card" style="padding:12px">
+    <h2>Vista previa</h2>
+    <iframe id="pv" src="../app/index.html"></iframe>
+    <p class="muted">Así se verá tu página final (modo Dark Premium). No mostramos datos técnicos.</p>
+  </section>
+</main>
+
+<section class="container section">
+  <h2>Preguntas frecuentes</h2>
+  <div class="grid4 section">
+    <div class="box"><strong>¿Cuánto tarda?</strong><p class="muted">La previsualización es instantánea. La activación ocurre al confirmar el pago.</p></div>
+    <div class="box"><strong>¿Puedo cambiar datos?</strong><p class="muted">Sí, nos escribís por WhatsApp/mail y se actualiza el JSON.</p></div>
+    <div class="box"><strong>¿Tengo dominio propio?</strong><p class="muted">Podés usar subdominio o tu dominio.</p></div>
+    <div class="box"><strong>¿Se puede medir?</strong><p class="muted">Sumamos metatags/analytics básicos si necesitás.</p></div>
+  </div>
+</section>
+
+<footer class="container section center muted">© Link Argento — Hecho en Argentina</footer>
+
+<script>
+const $=(s,r=document)=>r.querySelector(s), clean=s=>(s||'').trim(), validUrl=u=>/^https?:\/\//i.test(u||''), digits=s=>(s||'').replace(/\D+/g,'');
+function normalizeARPhone(input){ let n=digits(input); if(!n) return ''; n=n.replace(/^00/,'').replace(/^0+/,''); if(!n.startsWith('54')) n='54'+n; n=n.replace(/^54(?!9)(\d{2,4})15/,'549$1'); if(/^54(\d{2,4})(\d+)/.test(n) && !/^549/.test(n)) n=n.replace(/^54/,'549'); return n; }
+function addPromo(data={title:'',desc:'',price:'',link:''}){ const wrap=$('#promos'); if(!wrap) return; const r1=document.createElement('div'); r1.className='row'; r1.innerHTML='<div><label>Título</label><input></div><div><label>Descripción</label><input></div>'; const r2=document.createElement('div'); r2.className='row'; r2.innerHTML='<div><label>Precio (opcional)</label><input></div><div><label>Link</label><input placeholder="https://wa.me/..."></div>'; wrap.append(r1,r2); const [t,d]=r1.querySelectorAll('input'); const [p,l]=r2.querySelectorAll('input'); t.value=data.title||''; d.value=data.desc||''; p.value=data.price||''; l.value=data.link||''; }
+function addTesti(data={text:'',author:''}){ const wrap=$('#testis'); if(!wrap) return; const r=document.createElement('div'); r.className='row'; r.innerHTML='<div><label>Texto</label><input></div><div><label>Autor</label><input></div>'; wrap.append(r); const [t,a]=r.querySelectorAll('input'); t.value=data.text||''; a.value=data.author||''; }
+function collect(){ const f=$('#f'); const j={ brand:{ avatar:clean(f.avatar.value)||'/img/avatar.jpg', name:clean(f.name.value), tagline:clean(f.desc.value)||null, tags:(clean(f.chips.value)||'').split(',').map(s=>s.trim()).filter(Boolean).slice(0,4) }, theme:{ primary:'#A3E635', bg:'#0B0B0C', card:'#141416' }, cta:{ wa:normalizeARPhone(f.wa.value), wa_text:clean(f.wa_text.value)||'Hola!', calendar:validUrl(f.calendar.value)?clean(f.calendar.value):null, pay:validUrl(f.pay.value)?clean(f.pay.value):null }, social:{ instagram:validUrl(f.instagram.value)?clean(f.instagram.value):null, facebook:validUrl(f.facebook.value)?clean(f.facebook.value):null, tiktok:validUrl(f.tiktok.value)?clean(f.tiktok.value):null, linkedin:validUrl(f.linkedin.value)?clean(f.linkedin.value):null, youtube:validUrl(f.youtube.value)?clean(f.youtube.value):null, spotify:validUrl(f.spotify.value)?clean(f.spotify.value):null }, promotions:[], testimonials:[], footer:{ address:clean(f.address.value)||null, maps:validUrl(f.maps.value)?clean(f.maps.value):null, hours:null } }; document.querySelectorAll('#promos .row').forEach((row,i)=>{ if(i%2===0){ const t=row.querySelectorAll('input')[0].value, d=row.querySelectorAll('input')[1].value; const r2=row.nextElementSibling; const p=r2.querySelectorAll('input')[0].value, l=r2.querySelectorAll('input')[1].value; if(clean(t)) j.promotions.push({title:clean(t),desc:clean(d)||null,price:clean(p)||null,link:validUrl(l)?clean(l):null}); }}); document.querySelectorAll('#testis .row').forEach(row=>{ const t=row.querySelectorAll('input')[0].value, a=row.querySelectorAll('input')[1].value; if(clean(t)) j.testimonials.push({text:clean(t),author:clean(a)||null}); }); if(!j.brand.tagline) delete j.brand.tagline; if(!j.footer.address) delete j.footer.address; if(!j.footer.maps) delete j.footer.maps; if(!j.cta.calendar) delete j.cta.calendar; if(!j.cta.pay) delete j.cta.pay; Object.keys(j.social).forEach(k=>{ if(!j.social[k]) delete j.social[k]; }); return j; }
+function preview(){ const data=collect(); const url=URL.createObjectURL(new Blob([JSON.stringify(data)],{type:'application/json'})); $('#pv').src=`../app/index.html?config=${encodeURIComponent(url)}`; }
+function loadPreset(kind){ const f=$('#f'); f.reset(); if(kind==='barber'){ f.avatar.value='/img/barber-avatar.jpg'; f.name.value='Barbería Barrio X'; f.desc.value='Cortes premium en 20 minutos'; f.chips.value='CABA, Turnos online, Barba+Toalla'; f.wa.value='11 1234 5678'; f.wa_text.value='Hola! ¿Me das turno?'; f.calendar.value='https://calendly.com/tu-usuario'; f.pay.value='https://mpago.la/xxxx'; f.instagram.value='https://instagram.com/barberx'; f.facebook.value='https://facebook.com/barberx'; f.tiktok.value='https://tiktok.com/@barberx'; document.getElementById('promos').innerHTML=''; addPromo({title:'Pack Premium',desc:'Corte + Barba + Toalla',price:'ARS 9.900',link:'https://wa.me/5491112345678?text=Pack%20Premium'}); document.getElementById('testis').innerHTML=''; addTesti({text:'Me dejaron impecable en 20’',author:'Juan P.'}); } else { f.avatar.value='/img/psi-avatar.jpg'; f.name.value='Matías Pérez'; f.desc.value='Psicólogo — Terapia breve y efectiva'; f.chips.value='Online, Primera entrevista, Agenda simple'; f.wa.value='11 9999 8888'; f.wa_text.value='Hola! Quiero coordinar una sesión'; f.calendar.value='https://calendly.com/psi-usuario'; f.pay.value='https://mpago.la/psipago'; f.linkedin.value='https://linkedin.com/in/psimat'; f.instagram.value='https://instagram.com/psimat'; f.youtube.value='https://youtube.com/@psimat'; f.spotify.value='https://open.spotify.com/show/psipod'; document.getElementById('promos').innerHTML=''; addPromo({title:'Pack 4 sesiones',desc:'Acompañamiento quincenal',price:'ARS 32.000'}); document.getElementById('testis').innerHTML=''; addTesti({text:'Práctico y claro.',author:'M. K.'}); } preview(); }
+function submitOrder(e){ e.preventDefault(); const data=collect(); const adminEmail='diego.rotryng@gmail.com'; const mpLink=data.cta?.pay || 'https://mpago.la/xxxx'; const subject=encodeURIComponent(`[Pedido Página Express] ${data.brand?.name}`); const jsonPretty=JSON.stringify(data,null,2); try{ const blob=new Blob([jsonPretty],{type:'application/json'}); const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download=(data.brand?.name||'cliente').replace(/\s+/g,'-').toLowerCase()+'.json'; document.body.appendChild(a); a.click(); document.body.removeChild(a); setTimeout(()=>URL.revokeObjectURL(url),1000);}catch(err){} const body=encodeURIComponent(`Hola! Ya completé mis datos y voy a realizar el pago aquí: ${mpLink}\n\nPor favor, activen mi página y envíenme el enlace final.\n\nDatos:\n- Nombre: ${data.brand?.name}\n- WhatsApp (normalizado): ${data.cta?.wa}\n- Email: ${$('#f').email.value}\n\nJSON normalizado (copiar/pegar):\n${jsonPretty}\n`); window.location.href=`mailto:${adminEmail}?subject=${subject}&body=${body}`; preview(); alert('¡Listo! Abrimos tu correo con el pedido. Incluimos el JSON normalizado y además descargamos un archivo cliente.json para respaldo. Tras abonar, respondé ese mail con el comprobante y activamos tu página.'); return false; }
+window.addEventListener('DOMContentLoaded',()=>{ if(document.getElementById('promos') && !document.getElementById('promos').children.length) addPromo(); if(document.getElementById('testis') && !document.getElementById('testis').children.length) addTesti(); });
+</script>
+</body>
+</html>

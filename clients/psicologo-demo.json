@@ -1,0 +1,46 @@
+{
+  "brand": {
+    "avatar": "/img/psi-avatar.jpg",
+    "name": "Matías Pérez",
+    "tagline": "Psicólogo — Terapia breve y efectiva",
+    "tags": [
+      "Online",
+      "Primera entrevista",
+      "Agenda simple"
+    ]
+  },
+  "theme": {
+    "primary": "#A3E635",
+    "bg": "#0B0B0C",
+    "card": "#141416"
+  },
+  "cta": {
+    "wa": "5491199998888",
+    "wa_text": "Hola! Quiero coordinar una sesión",
+    "calendar": "https://calendly.com/psi-usuario",
+    "pay": "https://mpago.la/psipago"
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/in/psimat",
+    "instagram": "https://instagram.com/psimat",
+    "youtube": "https://youtube.com/@psimat",
+    "spotify": "https://open.spotify.com/show/psipod"
+  },
+  "promotions": [
+    {
+      "title": "Pack 4 sesiones",
+      "desc": "Acompañamiento quincenal",
+      "price": "ARS 32.000"
+    }
+  ],
+  "testimonials": [
+    {
+      "text": "Práctico y claro.",
+      "author": "M. K."
+    }
+  ],
+  "footer": {
+    "address": "Online",
+    "maps": null
+  }
+}
