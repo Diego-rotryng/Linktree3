@@ -1,15 +1,11 @@
-# LinkTree Argento — Dark Premium (GitHub-ready)
-
-## Estructura
-- `/landing/` → Landing comercial con discurso + formulario + **previsualización** (no muestra JSON).
-- `/app/` → Plantilla Dark que **lee ?config=<url>** con el JSON.
-- `/clients/` → Demos: `barberia-demo.json`, `psicologo-demo.json`.
+# LinkTree Argento — GitHub/Vercel Patched
+- Raíz redirige a `/landing/`
+- **Landing** usa rutas robustas y `postMessage` para previsualizar sin `blob:`
+- **App** soporta `?config=` y fallback a `/clients/barberia-demo.json` con path resuelto
+- Mail a **diego.rotryng@gmail.com** con JSON normalizado + descarga `cliente.json`
 
 ## Local
 ```bash
 python -m http.server 5500
-# Abrir http://localhost:5500/landing/
+# http://localhost:5500/landing/
 ```
-
-## Deploy (GitHub Pages / Vercel)
-Subí esta carpeta tal cual. La landing queda en `/landing/`.
